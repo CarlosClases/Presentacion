@@ -42,7 +42,7 @@ public class WriterThread extends Thread {
 				System.out.println("FFFFFFFFFF" + message);
 				for(JPanel jpanels : panels) {
 					System.out.println("Protocol client ///////"+ jpanels.getName());
-					//if(protocol.equalsIgnoreCase(jpanels.getName())) {
+					if(protocol.equalsIgnoreCase(jpanels.getName())) {
 						System.out.println(jpanels.getName()+"/////Jpanel");
 						
 						for(int i=0; i< jpanels.getComponentCount();i++) {
@@ -81,7 +81,7 @@ public class WriterThread extends Thread {
 						}
 					}
 					
-					//}		
+					}		
 				}
 				} catch (IOException e) {
 				// TODO Auto-generated catch block
